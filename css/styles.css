@@ -1,7 +1,11 @@
+header{height:30px;}
+#detailsPage div{margin:0px !important; padding:0px !important;}
+
 #employeePic {
 	float: left;
-	padding-right: 10px;
-	padding-bottom: 16px;
+	/*padding-right: 10px;
+	padding-bottom: 16px;*/
+	margin:0px;
 }
 
 #employeeDetails p {
@@ -11,4 +15,19 @@
 
 #actionList {
 	clear: both;
+	margin-left:2px !important;
+	margin-right:2px !important;
 }
+
+#imagenoferta{margin:0px;}
+#precios{border-top:10px solid #DDD; border-bottom:10px solid #DDD; height:30px; width:100%; display:flex; font-family:Verdana; margin-bottom:10px; background-color:#FFF; }
+#precioantes{ font-size:18px; text-align:center; width:50%; font-weight:bold; text-decoration:line-through; vertical-align:middle;}
+#preciodespues{ font-size:18px; color:#F00; text-align:center; width:50%; font-weight:bold; vertical-align:middle;}
+#fullName{font-size:12px; height:20px;}
+#descripcionoferta{font-size:14px; font-family:Verdana; padding:10px;}
+#datosempresa{border-top:10px solid #DDD; border-bottom:10px solid #DDD; height:40px; width:100%; display:flex; font-family:Verdana; margin-bottom:10px; background-color:#FFF;}
+#datosempresa p{padding-left:5px !important;}
+
+
+
+
