@@ -13,21 +13,27 @@
 <div id="employeeListPage" data-role="page" >
 
 	<div data-role="header" data-position="fixed">
-		<h1>Test App</h1>
+		<h1 id="apptitle">Ofertas</h1>
 	</div>
 
 	<div data-role="navbar">
 		<ul>
-			<li><a href="a.html" class="ui-btn-active">Ofertas</a></li>
-			<li><a href="b.html">Eventos</a></li>
-			<li><a href="b.html">Ocasi&oacute;n</a></li>
+			<li id="ofertas"><a href="#" onclick="getOfertasList();" class="ui-btn-active">Ofertas</a></li>
+			<li><a href="#" onclick="getEventosList();">Eventos</a></li>
+			<li><a href="#" onclick="getOcasionList();">Ocasi&oacute;n</a></li>
 			<li><a href="b.html">Empresas</a></li>
 		</ul>
 	</div><!-- /navbar -->
 
-	<div data-role="content">
+	<div data-role="content" id="contenedorofertas">
          <ul id="employeeList" data-role="listview" data-filter="true"></ul>
     </div>		
+	<div data-role="content" id="contenedoreventos">
+         <ul id="eventosList" data-role="listview" data-filter="true"></ul>
+    </div>	
+	<div data-role="content" id="contenedorocasion">
+         <ul id="ocasionList" data-role="listview" data-filter="true"></ul>
+    </div>	
 
 </div>
 
