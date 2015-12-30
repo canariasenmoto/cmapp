@@ -1,5 +1,7 @@
 header{height:30px;}
 #detailsPage div{margin:0px !important; padding:0px !important;}
+#detailsPageEvento div{margin:0px !important; padding:0px !important;}
+#detailsPageOcasion div{margin:0px !important; padding:0px !important;}
 
 #employeePic {
 	float: left;
@@ -19,15 +21,48 @@ header{height:30px;}
 	margin-right:2px !important;
 }
 
-#imagenoferta{margin:0px;}
+#employeeList li h4{margin-top:0px; padding-top:0px; font-size:12px !important;}
+#employeeList li .preciooferta{ color:#3399ff; padding-left:10px; font-size:12px; font-family:Verdana;}
+#employeeList li .precioantes{ font-size:12px; text-decoration:line-through; font-family:Verdana;}
+
+#imagenoferta, #imagenevento{margin:0px;}
+#datosOcasion{border-top:10px solid #FFF; border-bottom:10px solid #DDD; height:30px; width:100%; display:flex; font-family:Verdana; margin-bottom:10px; background-color:#FFF; }
+#precioocasion{ font-size:18px; color:#3399ff; text-align:center; width:50%; font-weight:bold; vertical-align:middle;}
+#modeloOcasion{white-space:normal; background-color:#FFF; }
+#modeloOcasion p{padding:10px !important; font-size:16px; font-weight:bold; line-height:1.5em; text-align:center; border-top:10px solid #DDD;}
+
 #precios{border-top:10px solid #DDD; border-bottom:10px solid #DDD; height:30px; width:100%; display:flex; font-family:Verdana; margin-bottom:10px; background-color:#FFF; }
 #precioantes{ font-size:18px; text-align:center; width:50%; font-weight:bold; text-decoration:line-through; vertical-align:middle;}
 #preciodespues{ font-size:18px; color:#F00; text-align:center; width:50%; font-weight:bold; vertical-align:middle;}
+#kilometros{ font-size:18px; text-align:center; width:50%; font-weight:bold; vertical-align:middle;}
 #fullName{font-size:12px; height:20px;}
 #descripcionoferta{font-size:14px; font-family:Verdana; padding:10px;}
 #datosempresa{border-top:10px solid #DDD; border-bottom:10px solid #DDD; height:40px; width:100%; display:flex; font-family:Verdana; margin-bottom:10px; background-color:#FFF;}
 #datosempresa p{padding-left:5px !important;}
 
+
+
+.nombrelist{white-space:normal; font-size:12px; font-weight:bold; padding-bottom:10px; line-height:1.5em;}
+#eventoName{white-space:normal; background-color:#FFF;}
+#eventoName p{padding:10px !important; font-size:16px; font-weight:bold; line-height:1.5em;}
+#eventosList img{min-width:80px; min-height:80px;}
+#eventosList li{ padding-top:10px; padding-bottom:10px; padding-left:5px;}
+
+#ocasionList img{width:80px; height:60px;}
+#ocasionList li{ padding-left:5px; max-height:70px; padding-top:5px;}
+#ocasionList li h4{margin-top:0px; padding-top:0px;}
+
+#eventoDetails{ border-bottom:1px solid #DDD; display:flex;}
+#eventoDetails #localizacion{ width:50%; background-color:#FFF !important; border-right:1px solid #DDD; min-height:100px; line-height:1.5em; padding:10px !important; font-size:12px;}
+#eventoDetails #fechaevento{ width:50%; background-color:#FFF !important; min-height:100px; line-height:1.5em; padding:10px !important; font-size:12px;}
+#eventoDetails #localizacion p.eventotitulo{ color:#3399ff;  padding:0px !important; font-size:12px; margin:0px !important; font-weight:bold;}
+#eventoDetails #fechaevento p.eventotitulo{color:#3399ff;  padding:0px !important; font-size:12px; margin:0px !important; font-weight:bold;}
+#eventoDescripcion{white-space:normal; background-color:#FFF; }
+#eventoDescripcion p{padding:10px !important; font-size:12px; line-height:1.5em;}
+
+#eventoMotoclubs{white-space:normal; background-color:#FFF; }
+#eventoMotoclubs p{padding:10px !important; font-size:12px; line-height:1.5em;}
+.tituloseccion{ color:#000; font-size:12px; font-weight:bold; line-height:1.5em;}
 
 
 
