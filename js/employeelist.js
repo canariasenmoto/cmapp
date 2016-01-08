@@ -1,6 +1,7 @@
 var serviceURL = "http://tienda.canariasenmoto.com/servicecm/destacados.json";
 var serviceeventosURL = "http://tienda.canariasenmoto.com/servicecm/eventos.json";
 var serviceocasionURL = "http://tienda.canariasenmoto.com/servicecm/ofertas.json";
+var serviceempresasURL = "http://tienda.canariasenmoto.com/servicecm/empresas.json";
 
 var employees;
 
@@ -59,12 +60,29 @@ function getOcasionList() {
 	});
 }
 
+
+function getEmpresasList() {
+	mostrarEmpresas();
+	$.getJSON(serviceempresasURL, function(data) {
+		$('#empresasList li').remove();
+		empresas = data;
+		$.each(empresas, function(index, empresa) {
+			$('#empresasList').append('<li>' +					
+					'<h4>' + empresa.nombre + '</h4>' +
+					'<div class="empresaslistdesc">' + empresa.descripcion_corta + '</div>' +
+					'<div id="enlacesempresas"><a href="tel:' + empresa.telefono + '" class="telefono">' + empresa.telefono + '</a><a href="mailto:' + empresa.email + '" class="telefono">' + empresa.email + '</a></div></li>');
+		});
+		$('#empresasList').listview('refresh');
+	});
+}
+
 function mostrarOfertas()
 {
   $('#apptitle').text('Ofertas');
   $('#contenedoreventos').hide();
   $('#contenedorofertas').show();
   $('#contenedorocasion').hide();
+  $('#contenedorempresas').hide();
 }
 
 
@@ -74,6 +92,7 @@ function mostrarEventos()
   $('#contenedoreventos').show();
   $('#contenedorofertas').hide();
   $('#contenedorocasion').hide();
+  $('#contenedorempresas').hide();
 }
 
 function mostrarOcasion()
@@ -83,4 +102,16 @@ function mostrarOcasion()
   $('#contenedoreventos').hide();
   $('#contenedorofertas').hide();
   $('#contenedorocasion').show();
+  $('#contenedorempresas').hide();
+}
+
+
+function mostrarEmpresas()
+{
+  $('#apptitle').text('');
+  $('#apptitle').append('Ocasi&oacute;n');
+  $('#contenedoreventos').hide();
+  $('#contenedorofertas').hide();
+  $('#contenedorocasion').hide();
+  $('#contenedorempresas').show();
 }

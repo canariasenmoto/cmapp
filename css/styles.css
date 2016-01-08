@@ -65,4 +65,8 @@ header{height:30px;}
 .tituloseccion{ color:#000; font-size:12px; font-weight:bold; line-height:1.5em;}
 
 
-
+#empresasList ul li div{padding:10px !important;}
+#empresasList ul li h4{padding:10px !important;}
+.empresaslistdesc{white-space:normal; font-size:11px; font-weight:normal; padding-bottom:10px; line-height:1.5em;}
+#enlacesempresas{padding:10px;}
+#enlacesempresas .telefono{color:#666; font-size:11px; padding-right:20px; text-decoration:none; text-align:center;}
